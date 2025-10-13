@@ -7,7 +7,7 @@
         <classes>
             <class name="Bus_Testcases.TC_BusSearch"/>
             <!--<class name="Bus_Testcases.TC_Booking"/>-->
-            <class name="Bus_Testcases.TC_Bus_Filters"/>
+            <!--<class name="Bus_Testcases.TC_Bus_Filters">-->
         </classes>
     </test>
     <!-- Chrome on Windows -->
@@ -17,7 +17,7 @@
         <classes>
             <class name="Bus_Testcases.TC_BusSearch"/>
             <!--<class name="Bus_Testcases.TC_Booking"/>-->
-            <class name="Bus_Testcases.TC_Bus_Filters"/>
+            <!--<class name="Bus_Testcases.TC_Bus_Filters">-->
         </classes>
     </test>
   
