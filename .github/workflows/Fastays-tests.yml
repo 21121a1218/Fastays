@@ -1,0 +1,42 @@
+name: Fastays Automation Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+
+  run-tests:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Setup Java
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '17'
+
+    - name: Build Project
+      run: mvn clean install -DskipTests
+
+    - name: Run TestNG Tests
+      run: mvn test
+
+    - name: Upload TestNG Reports
+      uses: actions/upload-artifact@v4
+      with:
+        name: TestNG-Reports
+        path: test-output
+
+    - name: Upload Extent Report
+      uses: actions/upload-artifact@v4
+      with:
+        name: Extent-Report
+        path: test-output/ExtentReport.html

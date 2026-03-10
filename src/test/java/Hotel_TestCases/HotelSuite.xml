@@ -1,0 +1,12 @@
+
+<suite name="Bussuite" parallel="tests" thread-count="3">
+
+    <!-- Chrome on Windows -->
+    <test name="ChromeTest">
+        <parameter name="os" value="windows"/>
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="Hotel_TestCases.TC_Hotel_End_to_End"/>
+        </classes>
+        </test>
+</suite>

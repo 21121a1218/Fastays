@@ -1,0 +1,8 @@
+<suite name="Fastays Master Suite" parallel="tests" thread-count="3">
+
+	<suite-files>
+		<suite-file path="HotelSuite.xml" />
+		<suite-file path="BusSuite.xml" />
+	</suite-files>
+
+</suite>

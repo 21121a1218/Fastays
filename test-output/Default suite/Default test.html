@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>25/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Oct 14 11:15:11 IST 2025</td>
+<td>Started on:</td><td>Tue Mar 10 15:57:08 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>45 seconds (45788 ms)</td>
+<tr><td>Total time:</td><td>78 seconds (78559 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,191 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Hotel_TestCases.TC_Hotel_End_to_End.Book()'><b>Book</b><br>Test class: Hotel_TestCases.TC_Hotel_End_to_End</td>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [948b94f019338c2964a3b6198c355125, findElement [value, using]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\calve\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62592}, goog:processID: 4136, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62592/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 948b94f019338c2964a3b6198c355125
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:584)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.click(Unknown Source)
+	at Hotel_Pageobjects.Hotel_Booking_Flow.bankPayment(Hotel_Booking_Flow.java:138)
+	at Hotel_TestCases.TC_Hotel_End_to_End.Book(TC_Hotel_End_to_End.java:470)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.io.UncheckedIOException: java.io.IOException: HTTP/1.1 header parser received no bytes
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:500)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$2(JdkHttpClient.java:387)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:589)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:459)
+	... 8 more
+Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
+	at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:348)
+	at java.net.http/jdk.internal.net.http.Http1Response$HeadersReader.onReadError(Http1Response.java:675)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	... 3 more
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:982)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:937)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:937)
+</pre></div><a href='#' onClick='toggleBox("stack-trace542475071", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace542475071'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [948b94f019338c2964a3b6198c355125, findElement [value, using]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\calve\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62592}, goog:processID: 4136, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62592/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 948b94f019338c2964a3b6198c355125
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:584)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.click(Unknown Source)
+	at Hotel_Pageobjects.Hotel_Booking_Flow.bankPayment(Hotel_Booking_Flow.java:138)
+	at Hotel_TestCases.TC_Hotel_End_to_End.Book(TC_Hotel_End_to_End.java:470)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.io.UncheckedIOException: java.io.IOException: HTTP/1.1 header parser received no bytes
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:500)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$2(JdkHttpClient.java:387)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:589)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:459)
+	... 8 more
+Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
+	at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:348)
+	at java.net.http/jdk.internal.net.http.Http1Response$HeadersReader.onReadError(Http1Response.java:675)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	... 3 more
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:982)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:937)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:937)
+</pre></div></td>
+<td>8</td>
+<td>Hotel_TestCases.TC_Hotel_End_to_End@1d470d0</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,40 +261,130 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Bus_Testcases.TC_Bus_Filters.Timing_filter_1()'><b>Timing_filter_1</b><br>Test class: Bus_Testcases.TC_Bus_Filters</td>
-<td></td>
-<td>8</td>
-<td>Bus_Testcases.TC_Bus_Filters@2f4948e4</td></tr>
-<tr>
-<td title='Bus_Testcases.TC_Bus_Filters.Bus_type1()'><b>Bus_type1</b><br>Test class: Bus_Testcases.TC_Bus_Filters</td>
-<td></td>
-<td>3</td>
-<td>Bus_Testcases.TC_Bus_Filters@2f4948e4</td></tr>
-<tr>
-<td title='Bus_Testcases.TC_Bus_Filters.Bus_type3()'><b>Bus_type3</b><br>Test class: Bus_Testcases.TC_Bus_Filters</td>
-<td></td>
-<td>6</td>
-<td>Bus_Testcases.TC_Bus_Filters@2f4948e4</td></tr>
-<tr>
-<td title='Bus_Testcases.TC_Bus_Filters.Bus_type2()'><b>Bus_type2</b><br>Test class: Bus_Testcases.TC_Bus_Filters</td>
-<td></td>
-<td>3</td>
-<td>Bus_Testcases.TC_Bus_Filters@2f4948e4</td></tr>
-<tr>
-<td title='Bus_Testcases.TC_Bus_Filters.combinationFilters()'><b>combinationFilters</b><br>Test class: Bus_Testcases.TC_Bus_Filters</td>
-<td></td>
-<td>7</td>
-<td>Bus_Testcases.TC_Bus_Filters@2f4948e4</td></tr>
-<tr>
-<td title='Bus_Testcases.TC_Bus_Filters.Droppingpoint()'><b>Droppingpoint</b><br>Test class: Bus_Testcases.TC_Bus_Filters</td>
+<td title='Hotel_TestCases.TC_Hotel_End_to_End.verifyBaseprice()'><b>verifyBaseprice</b><br>Test class: Hotel_TestCases.TC_Hotel_End_to_End</td>
 <td></td>
 <td>0</td>
-<td>Bus_Testcases.TC_Bus_Filters@2f4948e4</td></tr>
+<td>Hotel_TestCases.TC_Hotel_End_to_End@1d470d0</td></tr>
 <tr>
-<td title='Bus_Testcases.TC_Bus_Filters.Boardingpoint()'><b>Boardingpoint</b><br>Test class: Bus_Testcases.TC_Bus_Filters</td>
+<td title='Hotel_TestCases.TC_Hotel_End_to_End.location_verfiy()'><b>location_verfiy</b><br>Test class: Hotel_TestCases.TC_Hotel_End_to_End</td>
 <td></td>
-<td>5</td>
-<td>Bus_Testcases.TC_Bus_Filters@2f4948e4</td></tr>
+<td>1</td>
+<td>Hotel_TestCases.TC_Hotel_End_to_End@1d470d0</td></tr>
+<tr>
+<td title='Hotel_TestCases.TC_Hotel_End_to_End.Select_roomverify2()'><b>Select_roomverify2</b><br>Test class: Hotel_TestCases.TC_Hotel_End_to_End</td>
+<td></td>
+<td>0</td>
+<td>Hotel_TestCases.TC_Hotel_End_to_End@1d470d0</td></tr>
+<tr>
+<td title='Hotel_TestCases.TC_Hotel_End_to_End.verifyStartDate()'><b>verifyStartDate</b><br>Test class: Hotel_TestCases.TC_Hotel_End_to_End</td>
+<td></td>
+<td>0</td>
+<td>Hotel_TestCases.TC_Hotel_End_to_End@1d470d0</td></tr>
+<tr>
+<td title='Hotel_TestCases.TC_Hotel_End_to_End.verifyclearoffer()'><b>verifyclearoffer</b><br>Test class: Hotel_TestCases.TC_Hotel_End_to_End</td>
+<td></td>
+<td>2</td>
+<td>Hotel_TestCases.TC_Hotel_End_to_End@1d470d0</td></tr>
+<tr>
+<td title='Hotel_TestCases.TC_Hotel_End_to_End.aboutRoom_verfiy()'><b>aboutRoom_verfiy</b><br>Test class: Hotel_TestCases.TC_Hotel_End_to_End</td>
+<td></td>
+<td>3</td>
+<td>Hotel_TestCases.TC_Hotel_End_to_End@1d470d0</td></tr>
+<tr>
+<td title='Hotel_TestCases.TC_Hotel_End_to_End.verifyEndDate()'><b>verifyEndDate</b><br>Test class: Hotel_TestCases.TC_Hotel_End_to_End</td>
+<td></td>
+<td>0</td>
+<td>Hotel_TestCases.TC_Hotel_End_to_End@1d470d0</td></tr>
+<tr>
+<td title='Hotel_TestCases.TC_Hotel_End_to_End.amenties_verfiy()'><b>amenties_verfiy</b><br>Test class: Hotel_TestCases.TC_Hotel_End_to_End</td>
+<td></td>
+<td>0</td>
+<td>Hotel_TestCases.TC_Hotel_End_to_End@1d470d0</td></tr>
+<tr>
+<td title='Hotel_TestCases.TC_Hotel_End_to_End.verifyoffer()'><b>verifyoffer</b><br>Test class: Hotel_TestCases.TC_Hotel_End_to_End</td>
+<td></td>
+<td>2</td>
+<td>Hotel_TestCases.TC_Hotel_End_to_End@1d470d0</td></tr>
+<tr>
+<td title='Hotel_TestCases.TC_Hotel_End_to_End.Select_roomverify1()'><b>Select_roomverify1</b><br>Test class: Hotel_TestCases.TC_Hotel_End_to_End</td>
+<td></td>
+<td>4</td>
+<td>Hotel_TestCases.TC_Hotel_End_to_End@1d470d0</td></tr>
+<tr>
+<td title='Hotel_TestCases.TC_Hotel_End_to_End.Hotel_Search()'><b>Hotel_Search</b><br>Test class: Hotel_TestCases.TC_Hotel_End_to_End</td>
+<td></td>
+<td>19</td>
+<td>Hotel_TestCases.TC_Hotel_End_to_End@1d470d0</td></tr>
+<tr>
+<td title='Hotel_TestCases.TC_Hotel_End_to_End.verifyrefundinfo()'><b>verifyrefundinfo</b><br>Test class: Hotel_TestCases.TC_Hotel_End_to_End</td>
+<td></td>
+<td>0</td>
+<td>Hotel_TestCases.TC_Hotel_End_to_End@1d470d0</td></tr>
+<tr>
+<td title='Hotel_TestCases.TC_Hotel_End_to_End.login()'><b>login</b><br>Test class: Hotel_TestCases.TC_Hotel_End_to_End</td>
+<td></td>
+<td>7</td>
+<td>Hotel_TestCases.TC_Hotel_End_to_End@1d470d0</td></tr>
+<tr>
+<td title='Hotel_TestCases.TC_Hotel_End_to_End.fillthedeatils()'><b>fillthedeatils</b><br>Test class: Hotel_TestCases.TC_Hotel_End_to_End</td>
+<td></td>
+<td>1</td>
+<td>Hotel_TestCases.TC_Hotel_End_to_End@1d470d0</td></tr>
+<tr>
+<td title='Hotel_TestCases.TC_Hotel_End_to_End.reviews_verify()'><b>reviews_verify</b><br>Test class: Hotel_TestCases.TC_Hotel_End_to_End</td>
+<td></td>
+<td>0</td>
+<td>Hotel_TestCases.TC_Hotel_End_to_End@1d470d0</td></tr>
+<tr>
+<td title='Hotel_TestCases.TC_Hotel_End_to_End.verify_policy()'><b>verify_policy</b><br>Test class: Hotel_TestCases.TC_Hotel_End_to_End</td>
+<td></td>
+<td>0</td>
+<td>Hotel_TestCases.TC_Hotel_End_to_End@1d470d0</td></tr>
+<tr>
+<td title='Hotel_TestCases.TC_Hotel_End_to_End.SelectedHotelname_verfiy()'><b>SelectedHotelname_verfiy</b><br>Test class: Hotel_TestCases.TC_Hotel_End_to_End</td>
+<td></td>
+<td>3</td>
+<td>Hotel_TestCases.TC_Hotel_End_to_End@1d470d0</td></tr>
+<tr>
+<td title='Hotel_TestCases.TC_Hotel_End_to_End.verify_iterny()'><b>verify_iterny</b><br>Test class: Hotel_TestCases.TC_Hotel_End_to_End</td>
+<td></td>
+<td>0</td>
+<td>Hotel_TestCases.TC_Hotel_End_to_End@1d470d0</td></tr>
+<tr>
+<td title='Hotel_TestCases.TC_Hotel_End_to_End.verifyRoomDetails()'><b>verifyRoomDetails</b><br>Test class: Hotel_TestCases.TC_Hotel_End_to_End</td>
+<td></td>
+<td>0</td>
+<td>Hotel_TestCases.TC_Hotel_End_to_End@1d470d0</td></tr>
+<tr>
+<td title='Hotel_TestCases.TC_Hotel_End_to_End.verifygstcalculation()'><b>verifygstcalculation</b><br>Test class: Hotel_TestCases.TC_Hotel_End_to_End</td>
+<td></td>
+<td>0</td>
+<td>Hotel_TestCases.TC_Hotel_End_to_End@1d470d0</td></tr>
+<tr>
+<td title='Hotel_TestCases.TC_Hotel_End_to_End.verifyseeavialblty()'><b>verifyseeavialblty</b><br>Test class: Hotel_TestCases.TC_Hotel_End_to_End</td>
+<td></td>
+<td>2</td>
+<td>Hotel_TestCases.TC_Hotel_End_to_End@1d470d0</td></tr>
+<tr>
+<td title='Hotel_TestCases.TC_Hotel_End_to_End.verifypolicycheckbox()'><b>verifypolicycheckbox</b><br>Test class: Hotel_TestCases.TC_Hotel_End_to_End</td>
+<td></td>
+<td>0</td>
+<td>Hotel_TestCases.TC_Hotel_End_to_End@1d470d0</td></tr>
+<tr>
+<td title='Hotel_TestCases.TC_Hotel_End_to_End.viewonMap_verfiy()'><b>viewonMap_verfiy</b><br>Test class: Hotel_TestCases.TC_Hotel_End_to_End</td>
+<td></td>
+<td>11</td>
+<td>Hotel_TestCases.TC_Hotel_End_to_End@1d470d0</td></tr>
+<tr>
+<td title='Hotel_TestCases.TC_Hotel_End_to_End.verifytotalprice()'><b>verifytotalprice</b><br>Test class: Hotel_TestCases.TC_Hotel_End_to_End</td>
+<td></td>
+<td>0</td>
+<td>Hotel_TestCases.TC_Hotel_End_to_End@1d470d0</td></tr>
+<tr>
+<td title='Hotel_TestCases.TC_Hotel_End_to_End.attraction_verify()'><b>attraction_verify</b><br>Test class: Hotel_TestCases.TC_Hotel_End_to_End</td>
+<td></td>
+<td>0</td>
+<td>Hotel_TestCases.TC_Hotel_End_to_End@1d470d0</td></tr>
 </table><p>
 </body>
 </html>
