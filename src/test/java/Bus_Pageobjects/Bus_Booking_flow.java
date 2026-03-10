@@ -41,9 +41,10 @@ public class Bus_Booking_flow extends Baseclass{
 @FindBy(xpath="//button[normalize-space()='Submit']") WebElement submit;
 @FindBy(xpath="//button[normalize-space()='PAY NOW']") WebElement pAYNOW;
 @FindBy(xpath="//button[normalize-space()='Success']") WebElement success;
-@FindBy(xpath="//*[@id=\"root\"]/div/div/main/div/div/div/button") WebElement home;
+@FindBy(xpath="//button[normalize-space()='Back To Home']") WebElement home;
 @FindBy(xpath="//*[@id=\"nav-sidebar\"]/div[1]/label[2]/div/div") WebElement netbanking;
 @FindBy(xpath="//*[@id=\"main-stack-container\"]/div/div/div/div/div[2]/div/div/form[1]/div/label[1]/div/div/div/div/span") WebElement bod;
+
 public void Continue()
 {
 	wait.until(ExpectedConditions.visibilityOf(Continue)).click();

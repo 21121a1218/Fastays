@@ -1,10 +1,12 @@
-package Bus_Testcases;
+package Hotel_TestCases;
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
 import java.util.Properties;
+
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,7 +21,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
-public class BaseTestcase
+public class BaseTestCase
 {
     public WebDriver driver;
     public Properties p;
@@ -84,14 +86,25 @@ public class BaseTestcase
         }
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.get(p.getProperty("BusURL"));
+        driver.get(p.getProperty("HotelURL"));
         driver.manage().window().maximize();
     }
 
     @AfterClass
     public void teardown() {
         if (driver != null) {
-           driver.quit();
+           //driver.quit();
         }
+    }
+    public String randomString() {
+        return RandomStringUtils.randomAlphabetic(5);
+    }
+
+    public String randomNumeric() {
+        return RandomStringUtils.randomNumeric(10);
+    }
+
+    public String randomAlphaNumeric() {
+        return RandomStringUtils.randomAlphabetic(3) + "@" + RandomStringUtils.randomNumeric(2);
     }
 }

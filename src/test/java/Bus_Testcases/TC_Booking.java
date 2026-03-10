@@ -23,6 +23,7 @@ void book() throws InterruptedException
   lg.otp3("2");
   lg.otp4("3");
   lg.submit();
+  Thread.sleep(2000);
   bs.SearchForAnOrigin();
   bs.SearchCity1("Hyderabad");
   bs.City1("Hyderabad");
@@ -42,6 +43,7 @@ void book() throws InterruptedException
   bf.Detailssent("9381483697","", "Trinty");
    bf.Submit();
   bf.payNow(driver);
+  Thread.sleep(3000);
   bf.bankPayment(driver);
   bf.home();
 }
