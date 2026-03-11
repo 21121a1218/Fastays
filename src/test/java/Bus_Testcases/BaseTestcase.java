@@ -94,7 +94,7 @@ public class BaseTestcase {
                     ChromeOptions options = new ChromeOptions();
 
                     // Headless settings for CI / GitHub Actions
-                 //   options.addArguments("--headless=new");
+                    options.addArguments("--headless=new");
                     options.addArguments("--window-size=1920,1080");
                     options.addArguments("--disable-gpu");
                     options.addArguments("--no-sandbox");
