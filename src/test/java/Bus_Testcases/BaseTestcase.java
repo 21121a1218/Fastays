@@ -7,6 +7,8 @@ import java.net.URL;
 import java.time.Duration;
 import java.util.Properties;
 
+import org.apache.commons.lang3.RandomStringUtils;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,24 +22,29 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
-public class BaseTestcase
-{
+public class BaseTestcase {
+
     public WebDriver driver;
     public Properties p;
 
     @BeforeClass
     @Parameters({"os", "browser"})
-    void setup(@Optional("windows") String os, @Optional("chrome") String br) throws MalformedURLException, IOException {
+    void setup(@Optional("windows") String os, @Optional("chrome") String br) 
+            throws MalformedURLException, IOException {
 
-        // Load properties
+        // Load properties file
         FileReader file = new FileReader(".//src//test//resources//config.properties");
         p = new Properties();
         p.load(file);
 
         String env = p.getProperty("execution_env");
-        DesiredCapabilities capabilities = new DesiredCapabilities();
 
+        // ===============================
+        // REMOTE EXECUTION (SELENIUM GRID)
+        // ===============================
         if (env.equalsIgnoreCase("remote")) {
+
+            DesiredCapabilities capabilities = new DesiredCapabilities();
 
             // OS selection
             if (os.equalsIgnoreCase("windows")) {
@@ -72,10 +79,12 @@ public class BaseTestcase
                     throw new IllegalArgumentException("Unsupported browser: " + br);
             }
 
-            // Selenium Grid
             driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+        }
 
-        } 
+        // ===============================
+        // LOCAL EXECUTION
+        // ===============================
         else if (env.equalsIgnoreCase("local")) {
 
             switch (br.toLowerCase()) {
@@ -84,12 +93,12 @@ public class BaseTestcase
 
                     ChromeOptions options = new ChromeOptions();
 
-                    // Required for GitHub Actions / Linux runner
-                    options.addArguments("--headless=new");
+                    // Headless settings for CI / GitHub Actions
+                 //   options.addArguments("--headless=new");
+                    options.addArguments("--window-size=1920,1080");
+                    options.addArguments("--disable-gpu");
                     options.addArguments("--no-sandbox");
                     options.addArguments("--disable-dev-shm-usage");
-                    options.addArguments("--disable-gpu");
-                    options.addArguments("--window-size=1920,1080");
 
                     driver = new ChromeDriver(options);
                     break;
@@ -107,15 +116,36 @@ public class BaseTestcase
             }
         }
 
+        // Global settings
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+        // Headless ignores maximize, so set size manually
+        driver.manage().window().setSize(new Dimension(1920,1080));
+
+        // Open URL
         driver.get(p.getProperty("BusURL"));
-        driver.manage().window().maximize();
     }
 
     @AfterClass
     public void teardown() {
         if (driver != null) {
-            driver.quit();
+            //driver.quit();
         }
+    }
+
+    // ===============================
+    // RANDOM DATA GENERATORS
+    // ===============================
+
+    public String randomString() {
+        return RandomStringUtils.randomAlphabetic(5);
+    }
+
+    public String randomNumeric() {
+        return RandomStringUtils.randomNumeric(10);
+    }
+
+    public String randomAlphaNumeric() {
+        return RandomStringUtils.randomAlphabetic(3) + "@" + RandomStringUtils.randomNumeric(2);
     }
 }

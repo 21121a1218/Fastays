@@ -1,58 +1,9 @@
-2026-03-11 13:07:41 INFO  Hotel_TestCases.TC_Hotel_End_to_End - ===== LOGIN TEST STARTED =====
-2026-03-11 13:07:42 INFO  Hotel_TestCases.TC_Hotel_End_to_End - Clicked login
-2026-03-11 13:07:42 INFO  Hotel_TestCases.TC_Hotel_End_to_End - Entered mobile number
-2026-03-11 13:07:42 INFO  Hotel_TestCases.TC_Hotel_End_to_End - Clicked continue
-2026-03-11 13:07:44 INFO  Hotel_TestCases.TC_Hotel_End_to_End - Entered OTP
-2026-03-11 13:07:45 INFO  Hotel_TestCases.TC_Hotel_End_to_End - Clicked submit
-2026-03-11 13:07:48 INFO  Hotel_TestCases.TC_Hotel_End_to_End - Login successful
-2026-03-11 13:07:48 INFO  Hotel_TestCases.TC_Hotel_End_to_End - ===== HOTEL SEARCH STARTED =====
-2026-03-11 13:08:06 INFO  Hotel_TestCases.TC_Hotel_End_to_End - Search Results displayed
-2026-03-11 13:08:06 INFO  Hotel_TestCases.TC_Hotel_End_to_End - Stored hotel data from search page
-2026-03-11 13:08:06 INFO  Hotel_TestCases.TC_Hotel_End_to_End - ===== VERIFY SEE AVAILABILITY =====
-2026-03-11 13:08:07 INFO  Hotel_TestCases.TC_Hotel_End_to_End - Redirection to hotel details successful
-2026-03-11 13:08:07 INFO  Hotel_TestCases.TC_Hotel_End_to_End - ===== VERIFY SELECTED HOTEL NAME =====
-2026-03-11 13:08:10 INFO  Hotel_TestCases.TC_Hotel_End_to_End - Hotel name verified successfully
-2026-03-11 13:08:10 INFO  Hotel_TestCases.TC_Hotel_End_to_End - ===== VERIFY VIEW ON MAP =====
-2026-03-11 13:08:15 INFO  Hotel_TestCases.TC_Hotel_End_to_End - Google map displayed successfully
-2026-03-11 13:08:15 INFO  Hotel_TestCases.TC_Hotel_End_to_End - ===== VERIFY ABOUT ROOM =====
-2026-03-11 13:08:18 INFO  Hotel_TestCases.TC_Hotel_End_to_End - About room section verified
-2026-03-11 13:08:18 INFO  Hotel_TestCases.TC_Hotel_End_to_End - ===== VERIFY AMENITIES =====
-2026-03-11 13:08:18 INFO  Hotel_TestCases.TC_Hotel_End_to_End - Amenities verified
-2026-03-11 13:08:18 INFO  Hotel_TestCases.TC_Hotel_End_to_End - ===== VERIFY LOCATION =====
-2026-03-11 13:08:19 INFO  Hotel_TestCases.TC_Hotel_End_to_End - Location verified
-2026-03-11 13:08:19 INFO  Hotel_TestCases.TC_Hotel_End_to_End - ===== VERIFY ATTRACTIONS =====
-2026-03-11 13:08:19 INFO  Hotel_TestCases.TC_Hotel_End_to_End - Attractions verified
-2026-03-11 13:08:19 INFO  Hotel_TestCases.TC_Hotel_End_to_End - ===== VERIFY REVIEWS =====
-2026-03-11 13:08:19 INFO  Hotel_TestCases.TC_Hotel_End_to_End - Reviews verified
-2026-03-11 13:08:19 INFO  Hotel_TestCases.TC_Hotel_End_to_End - ===== SELECT ROOM VERIFY 1 =====
-2026-03-11 13:08:22 INFO  Hotel_TestCases.TC_Hotel_End_to_End - Room selected and hotel name verified
-2026-03-11 13:08:22 INFO  Hotel_TestCases.TC_Hotel_End_to_End - ===== SELECT ROOM VERIFY 2 =====
-2026-03-11 13:08:22 INFO  Hotel_TestCases.TC_Hotel_End_to_End - Hotel address verified
-2026-03-11 13:08:22 INFO  Hotel_TestCases.TC_Hotel_End_to_End - ===== VERIFY POLICY =====
-2026-03-11 13:08:22 INFO  Hotel_TestCases.TC_Hotel_End_to_End - Hotel policy verified
-2026-03-11 13:08:22 INFO  Hotel_TestCases.TC_Hotel_End_to_End - ===== VERIFY ITINERARY =====
-2026-03-11 13:08:22 INFO  Hotel_TestCases.TC_Hotel_End_to_End - Itinerary verified
-2026-03-11 13:08:22 INFO  Hotel_TestCases.TC_Hotel_End_to_End - ===== VERIFY START DATE =====
-2026-03-11 13:08:23 INFO  Hotel_TestCases.TC_Hotel_End_to_End - Checkin date verified
-2026-03-11 13:08:23 INFO  Hotel_TestCases.TC_Hotel_End_to_End - ===== VERIFY END DATE =====
-2026-03-11 13:08:23 INFO  Hotel_TestCases.TC_Hotel_End_to_End - Checkout date verified
-2026-03-11 13:08:23 INFO  Hotel_TestCases.TC_Hotel_End_to_End - ===== VERIFY ROOM DETAILS =====
-2026-03-11 13:08:23 INFO  Hotel_TestCases.TC_Hotel_End_to_End - Room details verified
-2026-03-11 13:08:23 INFO  Hotel_TestCases.TC_Hotel_End_to_End - ===== VERIFY REFUND INFO =====
-2026-03-11 13:08:23 INFO  Hotel_TestCases.TC_Hotel_End_to_End - Refund info verified
-2026-03-11 13:08:23 INFO  Hotel_TestCases.TC_Hotel_End_to_End - ===== FILL DETAILS =====
-2026-03-11 13:08:24 INFO  Hotel_TestCases.TC_Hotel_End_to_End - Form details filled
-2026-03-11 13:08:24 INFO  Hotel_TestCases.TC_Hotel_End_to_End - ===== VERIFY BASE PRICE =====
-2026-03-11 13:08:24 INFO  Hotel_TestCases.TC_Hotel_End_to_End - Base price verified
-2026-03-11 13:08:24 INFO  Hotel_TestCases.TC_Hotel_End_to_End - ===== VERIFY GST =====
-2026-03-11 13:08:24 INFO  Hotel_TestCases.TC_Hotel_End_to_End - GST verified
-2026-03-11 13:08:24 INFO  Hotel_TestCases.TC_Hotel_End_to_End - ===== VERIFY TOTAL PRICE =====
-2026-03-11 13:08:24 INFO  Hotel_TestCases.TC_Hotel_End_to_End - Total price verified
-2026-03-11 13:08:24 INFO  Hotel_TestCases.TC_Hotel_End_to_End - ===== VERIFY OFFER =====
-2026-03-11 13:08:27 INFO  Hotel_TestCases.TC_Hotel_End_to_End - Offer applied and verified
-2026-03-11 13:08:27 INFO  Hotel_TestCases.TC_Hotel_End_to_End - ===== VERIFY CLEAR OFFER =====
-2026-03-11 13:08:29 INFO  Hotel_TestCases.TC_Hotel_End_to_End - Offer cleared successfully
-2026-03-11 13:08:29 INFO  Hotel_TestCases.TC_Hotel_End_to_End - ===== VERIFY POLICY CHECKBOX =====
-2026-03-11 13:08:29 INFO  Hotel_TestCases.TC_Hotel_End_to_End - Policy checkbox verified
-2026-03-11 13:08:29 INFO  Hotel_TestCases.TC_Hotel_End_to_End - ===== BOOKING PROCESS STARTED =====
-2026-03-11 13:09:01 INFO  Hotel_TestCases.TC_Hotel_End_to_End - Booking completed successfully
+2026-03-11 13:46:39 INFO  Bus_Testcases.TC_Booking - ===== LOGIN TEST STARTED =====
+2026-03-11 13:46:52 INFO  Bus_Testcases.TC_Booking - ===== LOGIN SUCCESSFUL =====
+2026-03-11 13:46:52 INFO  Bus_Testcases.TC_Booking - ===== BUS SEARCH TEST STARTED =====
+2026-03-11 13:46:55 INFO  Bus_Testcases.TC_Booking - ===== BUS SEARCH COMPLETED =====
+2026-03-11 13:46:55 INFO  Bus_Testcases.TC_Booking - ===== SEAT SELECTION STARTED =====
+2026-03-11 13:47:05 INFO  Bus_Testcases.TC_Booking - ===== SEAT SELECTED SUCCESSFULLY =====
+2026-03-11 13:47:05 INFO  Bus_Testcases.TC_Booking - ===== PASSENGER DETAILS TEST STARTED =====
+2026-03-11 13:47:10 INFO  Bus_Testcases.TC_Booking - ===== PASSENGER DETAILS SUBMITTED =====
+2026-03-11 13:47:10 INFO  Bus_Testcases.TC_Booking - ===== PAYMENT TEST STARTED =====

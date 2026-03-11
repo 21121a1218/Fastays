@@ -51,7 +51,7 @@ public class TC_Booking extends BaseTestcase {
         bs.City2("Kurnool");
 
         bs.SelectADate();
-        bs.selectDate("21");
+        bs.selectDate("29");
 
         bs.Search();
 
