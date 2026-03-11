@@ -5,13 +5,38 @@
     <parameter name="os" value="windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="Bus_Testcases.TC_Booking">
+      <class name="Hotel_TestCases.TC_Hotel_End_to_End">
         <methods>
-          <include name="book"/>
           <include name="teardown"/>
+          <include name="verifyseeavialblty"/>
+          <include name="login"/>
+          <include name="Select_roomverify2"/>
+          <include name="verifygstcalculation"/>
+          <include name="Select_roomverify1"/>
+          <include name="verifyBaseprice"/>
+          <include name="Book"/>
+          <include name="verifyStartDate"/>
+          <include name="fillthedeatils"/>
           <include name="setup"/>
+          <include name="verifyrefundinfo"/>
+          <include name="Hotel_Search"/>
+          <include name="SelectedHotelname_verfiy"/>
+          <include name="location_verfiy"/>
+          <include name="aboutRoom_verfiy"/>
+          <include name="verifypolicycheckbox"/>
+          <include name="amenties_verfiy"/>
+          <include name="attraction_verify"/>
+          <include name="verifytotalprice"/>
+          <include name="viewonMap_verfiy"/>
+          <include name="verifyclearoffer"/>
+          <include name="reviews_verify"/>
+          <include name="verifyRoomDetails"/>
+          <include name="verify_policy"/>
+          <include name="verifyoffer"/>
+          <include name="verify_iterny"/>
+          <include name="verifyEndDate"/>
         </methods>
-      </class> <!-- Bus_Testcases.TC_Booking -->
+      </class> <!-- Hotel_TestCases.TC_Hotel_End_to_End -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Bussuite] -->

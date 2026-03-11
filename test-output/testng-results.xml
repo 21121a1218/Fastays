@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="26" passed="25" failed="1" skipped="0">
+<testng-results ignored="0" total="26" passed="26" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-10T15:57:08 IST" name="Default suite" finished-at="2026-03-10T15:58:26 IST" duration-ms="78559">
+  <suite started-at="2026-03-11T13:07:38 IST" name="Default suite" finished-at="2026-03-11T13:09:01 IST" duration-ms="83007">
     <groups>
     </groups>
-    <test started-at="2026-03-10T15:57:08 IST" name="Default test" finished-at="2026-03-10T15:58:26 IST" duration-ms="78559">
+    <test started-at="2026-03-11T13:07:38 IST" name="Default test" finished-at="2026-03-11T13:09:01 IST" duration-ms="83007">
       <class name="Hotel_TestCases.TC_Hotel_End_to_End">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-10T15:57:08 IST" name="setup" finished-at="2026-03-10T15:57:17 IST" duration-ms="8949" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-11T13:07:38 IST" name="setup" finished-at="2026-03-11T13:07:41 IST" duration-ms="2806" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,210 +23,111 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-10T15:57:17 IST" name="login" finished-at="2026-03-10T15:57:24 IST" duration-ms="7097" status="PASS">
+        <test-method signature="login()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-11T13:07:41 IST" name="login" finished-at="2026-03-11T13:07:48 IST" duration-ms="6974" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="Hotel_Search()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-10T15:57:24 IST" name="Hotel_Search" finished-at="2026-03-10T15:57:44 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.login" duration-ms="19342" status="PASS">
+        <test-method signature="Hotel_Search()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-11T13:07:48 IST" name="Hotel_Search" finished-at="2026-03-11T13:08:06 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.login" duration-ms="18080" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Hotel_Search -->
-        <test-method signature="verifyseeavialblty()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-10T15:57:44 IST" name="verifyseeavialblty" finished-at="2026-03-10T15:57:46 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.Hotel_Search" duration-ms="2496" status="PASS">
+        <test-method signature="verifyseeavialblty()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-11T13:08:06 IST" name="verifyseeavialblty" finished-at="2026-03-11T13:08:07 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.Hotel_Search" duration-ms="1111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyseeavialblty -->
-        <test-method signature="SelectedHotelname_verfiy()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-10T15:57:46 IST" name="SelectedHotelname_verfiy" finished-at="2026-03-10T15:57:49 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.verifyseeavialblty" duration-ms="3107" status="PASS">
+        <test-method signature="SelectedHotelname_verfiy()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-11T13:08:07 IST" name="SelectedHotelname_verfiy" finished-at="2026-03-11T13:08:10 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.verifyseeavialblty" duration-ms="3074" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SelectedHotelname_verfiy -->
-        <test-method signature="viewonMap_verfiy()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-10T15:57:49 IST" name="viewonMap_verfiy" finished-at="2026-03-10T15:58:01 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.SelectedHotelname_verfiy" duration-ms="11359" status="PASS">
+        <test-method signature="viewonMap_verfiy()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-11T13:08:10 IST" name="viewonMap_verfiy" finished-at="2026-03-11T13:08:15 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.SelectedHotelname_verfiy" duration-ms="4579" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewonMap_verfiy -->
-        <test-method signature="aboutRoom_verfiy()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-10T15:58:01 IST" name="aboutRoom_verfiy" finished-at="2026-03-10T15:58:04 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.viewonMap_verfiy" duration-ms="3289" status="PASS">
+        <test-method signature="aboutRoom_verfiy()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-11T13:08:15 IST" name="aboutRoom_verfiy" finished-at="2026-03-11T13:08:18 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.viewonMap_verfiy" duration-ms="3197" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aboutRoom_verfiy -->
-        <test-method signature="amenties_verfiy()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-10T15:58:04 IST" name="amenties_verfiy" finished-at="2026-03-10T15:58:04 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.aboutRoom_verfiy" duration-ms="253" status="PASS">
+        <test-method signature="amenties_verfiy()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-11T13:08:18 IST" name="amenties_verfiy" finished-at="2026-03-11T13:08:18 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.aboutRoom_verfiy" duration-ms="179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amenties_verfiy -->
-        <test-method signature="location_verfiy()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-10T15:58:04 IST" name="location_verfiy" finished-at="2026-03-10T15:58:05 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.amenties_verfiy" duration-ms="1090" status="PASS">
+        <test-method signature="location_verfiy()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-11T13:08:18 IST" name="location_verfiy" finished-at="2026-03-11T13:08:19 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.amenties_verfiy" duration-ms="628" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- location_verfiy -->
-        <test-method signature="attraction_verify()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-10T15:58:05 IST" name="attraction_verify" finished-at="2026-03-10T15:58:06 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.location_verfiy" duration-ms="252" status="PASS">
+        <test-method signature="attraction_verify()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-11T13:08:19 IST" name="attraction_verify" finished-at="2026-03-11T13:08:19 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.location_verfiy" duration-ms="184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- attraction_verify -->
-        <test-method signature="reviews_verify()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-10T15:58:06 IST" name="reviews_verify" finished-at="2026-03-10T15:58:06 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.attraction_verify" duration-ms="236" status="PASS">
+        <test-method signature="reviews_verify()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-11T13:08:19 IST" name="reviews_verify" finished-at="2026-03-11T13:08:19 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.attraction_verify" duration-ms="160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reviews_verify -->
-        <test-method signature="Select_roomverify1()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-10T15:58:06 IST" name="Select_roomverify1" finished-at="2026-03-10T15:58:10 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.reviews_verify" duration-ms="4177" status="PASS">
+        <test-method signature="Select_roomverify1()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-11T13:08:19 IST" name="Select_roomverify1" finished-at="2026-03-11T13:08:22 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.reviews_verify" duration-ms="2619" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Select_roomverify1 -->
-        <test-method signature="Select_roomverify2()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-10T15:58:10 IST" name="Select_roomverify2" finished-at="2026-03-10T15:58:10 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.Select_roomverify1" duration-ms="123" status="PASS">
+        <test-method signature="Select_roomverify2()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-11T13:08:22 IST" name="Select_roomverify2" finished-at="2026-03-11T13:08:22 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.Select_roomverify1" duration-ms="104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Select_roomverify2 -->
-        <test-method signature="verify_policy()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-10T15:58:10 IST" name="verify_policy" finished-at="2026-03-10T15:58:11 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.Select_roomverify2" duration-ms="387" status="PASS">
+        <test-method signature="verify_policy()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-11T13:08:22 IST" name="verify_policy" finished-at="2026-03-11T13:08:22 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.Select_roomverify2" duration-ms="243" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_policy -->
-        <test-method signature="verify_iterny()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-10T15:58:11 IST" name="verify_iterny" finished-at="2026-03-10T15:58:11 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.verify_policy" duration-ms="356" status="PASS">
+        <test-method signature="verify_iterny()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-11T13:08:22 IST" name="verify_iterny" finished-at="2026-03-11T13:08:22 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.verify_policy" duration-ms="209" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_iterny -->
-        <test-method signature="verifyStartDate()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-10T15:58:11 IST" name="verifyStartDate" finished-at="2026-03-10T15:58:11 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.verify_iterny" duration-ms="121" status="PASS">
+        <test-method signature="verifyStartDate()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-11T13:08:22 IST" name="verifyStartDate" finished-at="2026-03-11T13:08:23 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.verify_iterny" duration-ms="82" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyStartDate -->
-        <test-method signature="verifyEndDate()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-10T15:58:11 IST" name="verifyEndDate" finished-at="2026-03-10T15:58:11 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.verifyStartDate" duration-ms="121" status="PASS">
+        <test-method signature="verifyEndDate()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-11T13:08:23 IST" name="verifyEndDate" finished-at="2026-03-11T13:08:23 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.verifyStartDate" duration-ms="80" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEndDate -->
-        <test-method signature="verifyRoomDetails()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-10T15:58:11 IST" name="verifyRoomDetails" finished-at="2026-03-10T15:58:11 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.verifyEndDate" duration-ms="61" status="PASS">
+        <test-method signature="verifyRoomDetails()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-11T13:08:23 IST" name="verifyRoomDetails" finished-at="2026-03-11T13:08:23 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.verifyEndDate" duration-ms="48" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRoomDetails -->
-        <test-method signature="verifyrefundinfo()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-10T15:58:11 IST" name="verifyrefundinfo" finished-at="2026-03-10T15:58:11 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.verifyRoomDetails" duration-ms="62" status="PASS">
+        <test-method signature="verifyrefundinfo()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-11T13:08:23 IST" name="verifyrefundinfo" finished-at="2026-03-11T13:08:23 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.verifyRoomDetails" duration-ms="45" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyrefundinfo -->
-        <test-method signature="fillthedeatils()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-10T15:58:11 IST" name="fillthedeatils" finished-at="2026-03-10T15:58:13 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.verifyrefundinfo" duration-ms="1806" status="PASS">
+        <test-method signature="fillthedeatils()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-11T13:08:23 IST" name="fillthedeatils" finished-at="2026-03-11T13:08:24 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.verifyrefundinfo" duration-ms="1266" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillthedeatils -->
-        <test-method signature="verifyBaseprice()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-10T15:58:13 IST" name="verifyBaseprice" finished-at="2026-03-10T15:58:13 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.fillthedeatils" duration-ms="64" status="PASS">
+        <test-method signature="verifyBaseprice()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-11T13:08:24 IST" name="verifyBaseprice" finished-at="2026-03-11T13:08:24 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.fillthedeatils" duration-ms="49" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBaseprice -->
-        <test-method signature="verifygstcalculation()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-10T15:58:13 IST" name="verifygstcalculation" finished-at="2026-03-10T15:58:13 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.verifyBaseprice" duration-ms="135" status="PASS">
+        <test-method signature="verifygstcalculation()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-11T13:08:24 IST" name="verifygstcalculation" finished-at="2026-03-11T13:08:24 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.verifyBaseprice" duration-ms="92" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifygstcalculation -->
-        <test-method signature="verifytotalprice()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-10T15:58:13 IST" name="verifytotalprice" finished-at="2026-03-10T15:58:14 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.verifygstcalculation" duration-ms="168" status="PASS">
+        <test-method signature="verifytotalprice()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-11T13:08:24 IST" name="verifytotalprice" finished-at="2026-03-11T13:08:24 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.verifygstcalculation" duration-ms="109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifytotalprice -->
-        <test-method signature="verifyoffer()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-10T15:58:14 IST" name="verifyoffer" finished-at="2026-03-10T15:58:16 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.verifytotalprice" duration-ms="2532" status="PASS">
+        <test-method signature="verifyoffer()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-11T13:08:24 IST" name="verifyoffer" finished-at="2026-03-11T13:08:27 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.verifytotalprice" duration-ms="2374" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyoffer -->
-        <test-method signature="verifyclearoffer()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-10T15:58:16 IST" name="verifyclearoffer" finished-at="2026-03-10T15:58:18 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.verifyoffer" duration-ms="2211" status="PASS">
+        <test-method signature="verifyclearoffer()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-11T13:08:27 IST" name="verifyclearoffer" finished-at="2026-03-11T13:08:29 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.verifyoffer" duration-ms="2160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyclearoffer -->
-        <test-method signature="verifypolicycheckbox()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-10T15:58:18 IST" name="verifypolicycheckbox" finished-at="2026-03-10T15:58:18 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.verifyclearoffer" duration-ms="88" status="PASS">
+        <test-method signature="verifypolicycheckbox()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-11T13:08:29 IST" name="verifypolicycheckbox" finished-at="2026-03-11T13:08:29 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.verifyclearoffer" duration-ms="61" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifypolicycheckbox -->
-        <test-method signature="Book()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-10T15:58:18 IST" name="Book" finished-at="2026-03-10T15:58:26 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.verifypolicycheckbox" duration-ms="8030" status="FAIL">
-          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
-            <message>
-              <![CDATA[Error communicating with the remote browser. It may have died.
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [948b94f019338c2964a3b6198c355125, findElement [value, using]]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\calve\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62592}, goog:processID: 4136, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62592/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 948b94f019338c2964a3b6198c355125]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [948b94f019338c2964a3b6198c355125, findElement [value, using]]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\calve\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62592}, goog:processID: 4136, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62592/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 948b94f019338c2964a3b6198c355125
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:584)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy32.click(Unknown Source)
-at Hotel_Pageobjects.Hotel_Booking_Flow.bankPayment(Hotel_Booking_Flow.java:138)
-at Hotel_TestCases.TC_Hotel_End_to_End.Book(TC_Hotel_End_to_End.java:470)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.io.UncheckedIOException: java.io.IOException: HTTP/1.1 header parser received no bytes
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:500)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$2(JdkHttpClient.java:387)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
-at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:589)
-at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:459)
-... 8 more
-Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
-at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:348)
-at java.net.http/jdk.internal.net.http.Http1Response$HeadersReader.onReadError(Http1Response.java:675)
-at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
-at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
-at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205)
-at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
-at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
-... 3 more
-Caused by: java.net.SocketException: Connection reset
-at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170)
-at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833)
-at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
-at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
-at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
-at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
-at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
-at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
-at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
-at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:982)
-at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:937)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:937)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+        <test-method signature="Book()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-11T13:08:29 IST" name="Book" finished-at="2026-03-11T13:09:01 IST" depends-on-methods="Hotel_TestCases.TC_Hotel_End_to_End.verifypolicycheckbox" duration-ms="32094" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Book -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-10T15:58:26 IST" name="teardown" finished-at="2026-03-10T15:58:26 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Hotel_TestCases.TC_Hotel_End_to_End@1d470d0]" started-at="2026-03-11T13:09:01 IST" name="teardown" finished-at="2026-03-11T13:09:01 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
