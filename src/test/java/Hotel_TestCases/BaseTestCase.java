@@ -1,4 +1,5 @@
 package Hotel_TestCases;
+
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -10,14 +11,13 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;   // added
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
@@ -27,9 +27,9 @@ public class BaseTestCase
     public Properties p;
 
     @BeforeClass
-    //@BeforeMethod
     @Parameters({"os", "browser"})
     void setup(@Optional("windows") String os, @Optional("chrome") String br) throws MalformedURLException, IOException {
+
         // Load properties
         FileReader file = new FileReader(".//src//test//resources//config.properties");
         p = new Properties();
@@ -39,47 +39,70 @@ public class BaseTestCase
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
         if (env.equalsIgnoreCase("remote")) {
+
             // OS selection
             if (os.equalsIgnoreCase("windows")) {
                 capabilities.setPlatform(Platform.WINDOWS);
-            } else if (os.equalsIgnoreCase("mac")) {
+            } 
+            else if (os.equalsIgnoreCase("mac")) {
                 capabilities.setPlatform(Platform.MAC);
-            }  else if (os.equalsIgnoreCase("linux")) {
+            }  
+            else if (os.equalsIgnoreCase("linux")) {
                 capabilities.setPlatform(Platform.LINUX);
-            }  else {
+            }  
+            else {
                 throw new IllegalArgumentException("Unsupported OS: " + os);
             }
 
             // Browser selection
             switch (br.toLowerCase()) {
+
                 case "chrome":
                     capabilities.setBrowserName("chrome");
                     break;
+
                 case "edge":
                     capabilities.setBrowserName("MicrosoftEdge");
                     break;
+
                 case "firefox":
                     capabilities.setBrowserName("firefox");
                     break;
+
                 default:
                     throw new IllegalArgumentException("Unsupported browser: " + br);
             }
 
-            // Connect to Selenium Grid Hub
+            // Selenium Grid connection
             driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
 
-        } else if (env.equalsIgnoreCase("local")) {
-            // Local WebDriver setup
+        } 
+        else if (env.equalsIgnoreCase("local")) {
+
             switch (br.toLowerCase()) {
+
                 case "chrome":
-                    driver = new ChromeDriver();
+
+                    ChromeOptions options = new ChromeOptions();
+
+                    // Fix for GitHub Actions / Linux
+                    options.addArguments("--headless=new");
+                    options.addArguments("--no-sandbox");
+                    options.addArguments("--disable-dev-shm-usage");
+                    options.addArguments("--disable-gpu");
+                    options.addArguments("--window-size=1920,1080");
+
+                    driver = new ChromeDriver(options);
                     break;
+
                 case "edge":
                     driver = new EdgeDriver();
                     break;
+
                 case "firefox":
                     driver = new FirefoxDriver();
                     break;
+
                 default:
                     throw new IllegalArgumentException("Unsupported browser: " + br);
             }
@@ -96,6 +119,7 @@ public class BaseTestCase
            //driver.quit();
         }
     }
+
     public String randomString() {
         return RandomStringUtils.randomAlphabetic(5);
     }
