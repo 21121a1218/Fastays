@@ -12,7 +12,7 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;   // added
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -24,118 +24,119 @@ import org.testng.annotations.Parameters;
 
 public class BaseTestcase {
 
-    public WebDriver driver;
-    public Properties p;
+	 public WebDriver driver;
+	    public Properties p;
 
-    @BeforeClass
-    @Parameters({"os", "browser"})
-    void setup(@Optional("windows") String os, @Optional("chrome") String br) 
-            throws MalformedURLException, IOException {
+	    @BeforeClass
+	    @Parameters({"os", "browser"})
+	    void setup(@Optional("windows") String os, @Optional("chrome") String br) 
+	            throws MalformedURLException, IOException {
 
-        // Load properties file
-        FileReader file = new FileReader(".//src//test//resources//config.properties");
-        p = new Properties();
-        p.load(file);
+	        // Load properties file
+	        FileReader file = new FileReader(".//src//test//resources//config.properties");
+	        p = new Properties();
+	        p.load(file);
 
-        String env = p.getProperty("execution_env");
+	        String env = p.getProperty("execution_env");
 
-        // ===============================
-        // REMOTE EXECUTION (SELENIUM GRID)
-        // ===============================
-        if (env.equalsIgnoreCase("remote")) {
+	        // ===============================
+	        // REMOTE EXECUTION (SELENIUM GRID)
+	        // ===============================
+	        if (env.equalsIgnoreCase("remote")) {
 
-            DesiredCapabilities capabilities = new DesiredCapabilities();
+	            DesiredCapabilities capabilities = new DesiredCapabilities();
 
-            // OS selection
-            if (os.equalsIgnoreCase("windows")) {
-                capabilities.setPlatform(Platform.WINDOWS);
-            } 
-            else if (os.equalsIgnoreCase("mac")) {
-                capabilities.setPlatform(Platform.MAC);
-            }  
-            else if (os.equalsIgnoreCase("linux")) {
-                capabilities.setPlatform(Platform.LINUX);
-            }  
-            else {
-                throw new IllegalArgumentException("Unsupported OS: " + os);
-            }
+	            // OS selection
+	            if (os.equalsIgnoreCase("windows")) {
+	                capabilities.setPlatform(Platform.WINDOWS);
+	            } 
+	            else if (os.equalsIgnoreCase("mac")) {
+	                capabilities.setPlatform(Platform.MAC);
+	            }  
+	            else if (os.equalsIgnoreCase("linux")) {
+	                capabilities.setPlatform(Platform.LINUX);
+	            }  
+	            else {
+	                throw new IllegalArgumentException("Unsupported OS: " + os);
+	            }
 
-            // Browser selection
-            switch (br.toLowerCase()) {
+	            // Browser selection
+	            switch (br.toLowerCase()) {
 
-                case "chrome":
-                    capabilities.setBrowserName("chrome");
-                    break;
+	                case "chrome":
+	                    capabilities.setBrowserName("chrome");
+	                    break;
 
-                case "edge":
-                    capabilities.setBrowserName("MicrosoftEdge");
-                    break;
+	                case "edge":
+	                    capabilities.setBrowserName("MicrosoftEdge");
+	                    break;
 
-                case "firefox":
-                    capabilities.setBrowserName("firefox");
-                    break;
+	                case "firefox":
+	                    capabilities.setBrowserName("firefox");
+	                    break;
 
-                default:
-                    throw new IllegalArgumentException("Unsupported browser: " + br);
-            }
+	                default:
+	                    throw new IllegalArgumentException("Unsupported browser: " + br);
+	            }
 
-            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
-        }
+	            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+	        }
 
-        // ===============================
-        // LOCAL EXECUTION
-        // ===============================
-        else if (env.equalsIgnoreCase("local")) {
+	        // ===============================
+	        // LOCAL EXECUTION
+	        // ===============================
+	        else if (env.equalsIgnoreCase("local")) {
 
-            switch (br.toLowerCase()) {
+	            switch (br.toLowerCase()) {
 
-                case "chrome":
+	                case "chrome":
 
-                    ChromeOptions options = new ChromeOptions();
+	                    ChromeOptions options = new ChromeOptions();
 
-                    // Headless settings for CI / GitHub Actions
-                    options.addArguments("--headless=new");
-                    options.addArguments("--window-size=1920,1080");
-                    options.addArguments("--disable-gpu");
-                    options.addArguments("--no-sandbox");
-                    options.addArguments("--disable-dev-shm-usage");
+	                    // Headless settings for CI / GitHub Actions
+	                    options.addArguments("--headless=new");
+	                    options.addArguments("--window-size=1920,1080");
+	                    options.addArguments("--disable-gpu");
+	                    options.addArguments("--no-sandbox");
+	                    options.addArguments("--disable-dev-shm-usage");
 
-                    driver = new ChromeDriver(options);
-                    break;
+	                    driver = new ChromeDriver(options);
+	                    break;
 
-                case "edge":
-                    driver = new EdgeDriver();
-                    break;
+	                case "edge":
+	                    driver = new EdgeDriver();
+	                    break;
 
-                case "firefox":
-                    driver = new FirefoxDriver();
-                    break;
+	                case "firefox":
+	                    driver = new FirefoxDriver();
+	                    break;
 
-                default:
-                    throw new IllegalArgumentException("Unsupported browser: " + br);
-            }
-        }
+	                default:
+	                    throw new IllegalArgumentException("Unsupported browser: " + br);
+	            }
+	        }
 
-        // Global settings
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	        // Global settings
+	        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-        // Headless ignores maximize, so set size manually
-        driver.manage().window().setSize(new Dimension(1920,1080));
+	        // Headless ignores maximize, so set size manually
+	        driver.manage().window().setSize(new Dimension(1920,1080));
 
-        // Open URL
+        // Open Application
         driver.get(p.getProperty("BusURL"));
     }
 
     @AfterClass
     public void teardown() {
-        if (driver != null) {
-            //driver.quit();
+
+        if(driver != null) {
+            driver.quit();
         }
     }
 
-    // ===============================
+    // =========================
     // RANDOM DATA GENERATORS
-    // ===============================
+    // =========================
 
     public String randomString() {
         return RandomStringUtils.randomAlphabetic(5);
@@ -146,6 +147,7 @@ public class BaseTestcase {
     }
 
     public String randomAlphaNumeric() {
-        return RandomStringUtils.randomAlphabetic(3) + "@" + RandomStringUtils.randomNumeric(2);
+        return RandomStringUtils.randomAlphabetic(3) + "@"
+                + RandomStringUtils.randomNumeric(2);
     }
 }

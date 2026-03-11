@@ -1,9 +1,9 @@
-2026-03-11 13:46:39 INFO  Bus_Testcases.TC_Booking - ===== LOGIN TEST STARTED =====
-2026-03-11 13:46:52 INFO  Bus_Testcases.TC_Booking - ===== LOGIN SUCCESSFUL =====
-2026-03-11 13:46:52 INFO  Bus_Testcases.TC_Booking - ===== BUS SEARCH TEST STARTED =====
-2026-03-11 13:46:55 INFO  Bus_Testcases.TC_Booking - ===== BUS SEARCH COMPLETED =====
-2026-03-11 13:46:55 INFO  Bus_Testcases.TC_Booking - ===== SEAT SELECTION STARTED =====
-2026-03-11 13:47:05 INFO  Bus_Testcases.TC_Booking - ===== SEAT SELECTED SUCCESSFULLY =====
-2026-03-11 13:47:05 INFO  Bus_Testcases.TC_Booking - ===== PASSENGER DETAILS TEST STARTED =====
-2026-03-11 13:47:10 INFO  Bus_Testcases.TC_Booking - ===== PASSENGER DETAILS SUBMITTED =====
-2026-03-11 13:47:10 INFO  Bus_Testcases.TC_Booking - ===== PAYMENT TEST STARTED =====
+2026-03-11 14:56:18 INFO  Bus_Testcases.TC_Booking - ===== LOGIN TEST STARTED =====
+2026-03-11 14:56:20 INFO  Bus_Testcases.TC_Booking - ===== LOGIN SUCCESSFUL =====
+2026-03-11 14:56:20 INFO  Bus_Testcases.TC_Booking - ===== BUS SEARCH TEST STARTED =====
+2026-03-11 14:56:23 INFO  Bus_Testcases.TC_Booking - ===== BUS SEARCH COMPLETED =====
+2026-03-11 14:56:23 INFO  Bus_Testcases.TC_Booking - ===== SEAT SELECTION STARTED =====
+2026-03-11 14:56:26 INFO  Bus_Testcases.TC_Booking - ===== SEAT SELECTED SUCCESSFULLY =====
+2026-03-11 14:56:26 INFO  Bus_Testcases.TC_Booking - ===== PASSENGER DETAILS TEST STARTED =====
+2026-03-11 14:56:29 INFO  Bus_Testcases.TC_Booking - ===== PASSENGER DETAILS SUBMITTED =====
+2026-03-11 14:56:29 INFO  Bus_Testcases.TC_Booking - ===== PAYMENT TEST STARTED =====
