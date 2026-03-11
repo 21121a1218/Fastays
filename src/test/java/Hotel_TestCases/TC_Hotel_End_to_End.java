@@ -362,16 +362,24 @@ public class TC_Hotel_End_to_End extends BaseTestCase {
                  new Hotel_End_to_End_Verification(driver);
         Hotel_Booking_Flow hb = new Hotel_Booking_Flow(driver);
 
+        String fname = randomString();
+        String lname = randomString();
+        String childFname = randomString();
+        String childLname = randomString();
+        String phone = randomNumeric();
+
         hb.tittle();
-        hb.firstname("Deva");
-        hb.lastname("reva");
+        hb.firstname(fname);
+        hb.lastname(lname);
         hb.gender();
+
         end.addChild();
+
         hb.childtittle();
         hb.childgender();
-        hb.childfirstname("fun");
-        hb.childlastname("fun");
-        hb.phonenumber("9898989898");
+        hb.childfirstname(childFname);
+        hb.childlastname(childLname);
+        hb.phonenumber(phone);
 
         log.info("Form details filled");
     }
