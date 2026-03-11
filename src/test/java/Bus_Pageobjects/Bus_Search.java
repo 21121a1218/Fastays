@@ -48,6 +48,12 @@ public class Bus_Search extends Baseclass{
 
 public void SearchForAnOrigin()
 {
+	try {
+		Thread.sleep(3000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 	wait.until(ExpectedConditions.visibilityOf(searchForAnOrigin)).click();
 }
 public void SearchCity1(String city1)
